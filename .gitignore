@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# VS Code — keep shared settings, ignore personal
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# User files
+codebase.txt
+.user_docs/*
