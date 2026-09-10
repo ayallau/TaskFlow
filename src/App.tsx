@@ -1,10 +1,17 @@
 import './App.css'
 
+const user = {
+  name: 'Ayal',
+  role: 'Developer',
+};
+
+const appName = 'TaskFlow';
+
 function App() {
   return (
-    <div>
+    <>
       <header>
-        <h1>TaskFlow</h1>
+        <h1>{appName}</h1>
       </header>
       <nav>
         <ul>
@@ -20,15 +27,17 @@ function App() {
         </ul>
       </nav>
       <main>
-        <h2>All My Tasks</h2>
+        <h2>Welcome to {appName}</h2>
         <section>
-
+          <p><b>User Details</b></p>
+          <p>Your name is: {user.name}</p>
+          <p>Your role is: {user.role}</p>
         </section>
       </main>
       <footer>
         <p>Copyright © 2026 Ayal Laufer</p>
       </footer>
-    </div>
+    </>
   );
 }
 
