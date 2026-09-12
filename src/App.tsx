@@ -1,4 +1,5 @@
 import './App.css'
+import { TaskCard } from './components/TaskCard';
 
 const user = {
   name: 'Ayal',
@@ -29,9 +30,21 @@ function App() {
       <main>
         <h2>Welcome to {appName}</h2>
         <section>
-          <p><b>User Details</b></p>
+          <p>
+            <b>User Details</b>
+          </p>
           <p>Your name is: {user.name}</p>
           <p>Your role is: {user.role}</p>
+        </section>
+        <section>
+          <h2>Task List</h2>
+          <TaskCard
+            id={1}
+            title="Task 1"
+            status="To Do"
+            priority="High"
+            assignee="Ayal"
+          />
         </section>
       </main>
       <footer>
