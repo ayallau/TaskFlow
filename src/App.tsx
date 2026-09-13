@@ -1,9 +1,12 @@
 import './App.css'
 import { TaskCard } from './components/TaskCard';
+import { UserCard } from './components/UserCard';
 
 const user = {
+  id: '1',
   name: 'Ayal',
   role: 'Developer',
+  isActive: true,
 };
 
 const appName = 'TaskFlow';
@@ -33,8 +36,12 @@ function App() {
           <p>
             <b>User Details</b>
           </p>
-          <p>Your name is: {user.name}</p>
-          <p>Your role is: {user.role}</p>
+          <UserCard
+            id={user.id}
+            name={user.name}
+            role={user.role}
+            isActive={user.isActive}
+          />
         </section>
         <section>
           <h2>Task List</h2>
