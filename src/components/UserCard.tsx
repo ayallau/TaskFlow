@@ -1,11 +1,6 @@
-type UserCardProps = {
-    id: string;
-    name: string;
-    role: string;
-    isActive: boolean; 
-};
+import type { User } from '../types/user';
 
-export function UserCard({ id, name, role, isActive }: UserCardProps) {
+export function UserCard({ id, name, role, isActive }: User) {
   return (
     <article>
       <h3>{name}</h3>
@@ -15,3 +10,4 @@ export function UserCard({ id, name, role, isActive }: UserCardProps) {
     </article>
   );
 }
+
