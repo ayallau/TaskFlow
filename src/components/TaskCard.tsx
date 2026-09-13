@@ -1,3 +1,6 @@
+// TaskCard responsibility:
+// This component is responsible for displaying a single task's relevant information, such as title, status, priority, and assignee.
+
 import type {Task} from '../types/task';
 
 export function TaskCard({ title, status, priority, assignee }: Task) {
